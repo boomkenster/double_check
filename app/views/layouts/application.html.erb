@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DoubleCheck</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body class=<%= 'bg' if params[:action] == 'index' && params[:controller] != 'static_pages' %>>
+	<title>Double Check!</title>
+	<div class = "container">
+
+	    <header>
+	    	<input type="text" placeholder="Search">
+	    	<div class="grid_7"id="navigation">
+	  			<ul>
+	    			<li>
+				        <!-- <a href="pages/places.html"class="parent">Places</a> -->
+				        <%= link_to "Places", check_lists_path %>
+				        	<ul>
+				            <li><%= link_to "S.America", places_path("samerica") %></li>
+				            <li><%= link_to "Australia", places_path("australia") %></li>
+				            <li><%= link_to "Canada", places_path("canada") %></li>
+				            <li><%= link_to "Europe", places_path("europe") %></li>
+				            <li><%= link_to "Asia", places_path("asia") %></li>
+				        </ul>
+				    </li>
+				</ul>
+	        	<ul>
+	            	<li>
+	            		<a>Climate</a>
+			      		<ul> 
+			      			<li><%= link_to "Coldddd", climate_path("cold") %></li>
+			      			<li><%= link_to "Hot Hot", climate_path("hot") %></li>
+			        	</ul>
+			        </li>
+	        	</ul>
+	        	<ul>
+	    			<li>
+	    				<a> Local </a>
+			        	<ul>
+			        		<li><%= link_to "Far", local_path("far") %></li>
+			        		<li><%= link_to "Close", local_path("close") %></li>
+						</ul>
+					</li>
+				</ul>
+	    	</div>
+	<ul class="hmenu">
+  		<%= render 'devise/menu/registration_items' %>
+  		<%= render 'devise/menu/login_items' %>
+	</ul>
+	
+	</div>
+
+	    </header>
+	</div>
+	
+	<p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+	<%= yield %>
+
+</body>
+</html>

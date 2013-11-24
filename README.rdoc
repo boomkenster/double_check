@@ -1,0 +1,14 @@
+#####################################################################
+DoubleCheck is an app that helps you pack and prepare for any trip. 
+Whether its a local trip to the gym or a week long vacation to Greece.
+
+Here's how to get it running:
+
+1. Bundle install
+2. rake db:migrate
+3. run 'rails server' from this directory
+
+Click the catagory that most closely relates to where you are going then,
+create a checklist! Soon you will be able to look at other user's checklists
+to compare, prepare and get ideas so you don't forget a thing!
+#####################################################################

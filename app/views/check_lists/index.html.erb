@@ -1,0 +1,26 @@
+<h1>Listing checklists</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Location</th>
+    <th>User</th>
+  </tr>
+
+<% @checklists.each do |checklist| %>
+  <tr>
+    <td><%= checklist.title %></td>
+    <td><%= checklist.description %></td>
+    <td><%= checklist.location %></td>
+    <td><%= checklist.user.email if checklist.user != nil %></td> <!-- if the checklist's user is empty dont put the email -->
+    <td><%= link_to 'Show', checklist %></td>
+    <td><%= link_to 'Edit', edit_check_list_path(checklist) %></td>
+    <td><%= link_to 'Destroy', checklist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New checklist', new_check_list_path %>

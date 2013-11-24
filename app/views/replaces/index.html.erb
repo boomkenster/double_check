@@ -1,0 +1,23 @@
+<h1>Listing replaces</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @replaces.each do |replace| %>
+  <tr>
+    <td><%= replace.name %></td>
+    <td><%= link_to 'Show', replace %></td>
+    <td><%= link_to 'Edit', edit_replace_path(replace) %></td>
+    <td><%= link_to 'Destroy', replace, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Replace', new_replace_path %>

@@ -1,0 +1,161 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+body.bg {
+  background: url('neighborhood.jpg')no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+}
+
+
+
+header{
+    margin-right: 450px;
+    
+}
+
+h1{
+
+margin-bottom: 0px;
+}
+
+body {
+  margin-top: 100px;
+}
+
+
+header { 
+    background-color: #4A92E3;
+    color: white;
+    width: 850px;
+    position: absolute;
+    margin-bottom: 80px;
+    top: 0;
+    font-size: 14px;
+    border: solid 2px #4A92E3;
+    height: 50px;
+
+}
+
+header input{
+height: 30px;
+position: absolute;
+top: 5px;
+right: 40px;
+bottom: 5px;    
+width: 200px;
+}
+
+
+.title:hover{
+}
+
+#navigation{
+
+}
+   {
+   height:75px;
+   }
+
+   #utility
+   {
+   height:75px;
+   }
+
+   ul 
+   {
+   font-family: Arial, Verdana;
+   margin: 0;
+   padding: 0;
+   }
+   ul li 
+   {
+   display: block;
+   position: relative;
+   float: left;
+   font-size:16px;
+   }
+
+   li ul { display: none; }
+
+   #navigation ul
+   {margin:0px; padding:0px;}
+
+
+   ul li a 
+   {
+   display:block;
+   text-decoration: none;
+   color: white;
+   padding: 20px 30px 20px 15px;
+   position:relative;
+   margin: 0;
+   line-height: 5px;
+
+   }
+
+   ul li a:hover 
+   { 
+   background: #4A92E3;
+   opacity: 0.7;
+   }
+
+   li:hover ul 
+   {
+   display: block;
+   position: absolute;
+   opacity: 0.9;
+   }
+
+   li:hover a 
+   { 
+   background: #4A92E3; 
+   opacity: 0.9;
+   }
+
+   li:hover li a:hover 
+   { 
+   background: #4A92E3;
+   opacity: 0.6;
+   }
+
+
+.title{
+
+    padding-top: 60px;
+    padding-left: 15px;
+
+}
+
+.title h1{
+    font-size: 20px;
+
+}
+
+ul.hmenu {
+  list-style: none; 
+  margin: 0 0 2em;
+  padding: 0;
+}
+
+ul.hmenu li {
+  display: inline;  
+}
+ .container {
+  width: 960px;
+  margin:0 auto ;
+ }

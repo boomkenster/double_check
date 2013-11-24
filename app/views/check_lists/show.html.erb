@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @checklist.title %>
+</p>
+<p>
+  <b>Description:</b>
+  <%= @checklist.description %>
+</p>
+<p>
+  <b>Location:</b>
+  <%= @checklist.location %>
+</p>
+<div>
+  <b>Items:</b>
+  <ul>
+	  <% @checklist.items.split(", ").each do |item| %>
+	  	<br>
+	  	<li><%= item %></li>
+	  	<br>
+	  <%end%>
+  </ul>
+  <br>
+</div>
+
+
+<%= link_to 'Edit', edit_check_list_path(@checklist) %> |
+<%= link_to 'Back', check_lists_path %>
