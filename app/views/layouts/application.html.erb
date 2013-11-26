@@ -14,35 +14,14 @@
 	    	<div class="grid_7"id="navigation">
 	  			<ul>
 	    			<li>
-				        <!-- <a href="pages/places.html"class="parent">Places</a> -->
-				        <%= link_to "Places", check_lists_path %>
-				        	<ul>
-				            <li><%= link_to "S.America", places_path("samerica") %></li>
-				            <li><%= link_to "Australia", places_path("australia") %></li>
-				            <li><%= link_to "Canada", places_path("canada") %></li>
-				            <li><%= link_to "Europe", places_path("europe") %></li>
-				            <li><%= link_to "Asia", places_path("asia") %></li>
-				        </ul>
+				        <%= link_to "Home", root_path %>
 				    </li>
 				</ul>
 	        	<ul>
 	            	<li>
-	            		<a>Climate</a>
-			      		<ul> 
-			      			<li><%= link_to "Coldddd", climate_path("cold") %></li>
-			      			<li><%= link_to "Hot Hot", climate_path("hot") %></li>
-			        	</ul>
+	            		<%= link_to "Check Lists", check_lists_path %>
 			        </li>
 	        	</ul>
-	        	<ul>
-	    			<li>
-	    				<a> Local </a>
-			        	<ul>
-			        		<li><%= link_to "Far", local_path("far") %></li>
-			        		<li><%= link_to "Close", local_path("close") %></li>
-						</ul>
-					</li>
-				</ul>
 	    	</div>
 	<ul class="hmenu">
   		<%= render 'devise/menu/registration_items' %>
